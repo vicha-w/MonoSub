@@ -29,7 +29,7 @@ def print_message():
     print()
 
 autofreq = True
-commandlist = "add remove clear frequency autofreq summary save load quit exit"
+commandlist = "add remove clear reset frequency autofreq summary save load quit exit"
 
 while True:
     print_message()
@@ -84,6 +84,8 @@ while True:
                     continue
                 dictionary[command.split(' ')[1].upper()] = '.'
             elif command == "clear":
+                continue
+            elif command == "reset":
                 for key in dictionary.keys():
                     dictionary[key] = '.'
             elif command.split(' ')[0] == "autofreq":

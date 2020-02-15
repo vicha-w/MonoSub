@@ -12,7 +12,8 @@ Simple CLI to help decipher monoalphabetic ciphers
 ## Commands
 - `add <source> <dest>` adds transformation rule from each character in `source` to each character in `dest`. For example, `add abc the` changes `a` to `t`, `b` to `h`, and `c` to `e`.
 - `remove <char>` resets one character at a time.
-- `clear` resets all characters.
+- `clear` clears the screen and print the message again.
+- `reset` resets all characters.
 - `frequency` shows the frequency of all characters.
 - `autofreq (on/off)` turns auto printing of character frequency on or off.
 - `summary` summarises all transformation rules.
